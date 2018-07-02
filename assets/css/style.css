@@ -17,93 +17,277 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	/*font-size: 20px;*/
 }
 
-
-/*.logo {
-	border-radius: 50%;
-	max-width: 200px;
-}*/
+.container-fluid {
+	padding: 0;
+}
 
 h1 {
-	font-family: 'Pacifico', cursive;
-	font-size: 50px;
-	font-weight: bold;
-	margin-bottom: 25px;
+	font-family: 'Baloo', cursive;
+	font-size: 70px;
+	/*margin-bottom: 25px;*/
+	letter-spacing: 3px;
+	text-shadow: 0 8px white;
+
 }
+
+
+
+/* Landing Page */
+
+#showcase {
+	background-image: url(../../landing-page/img/landing-image1.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 30px;
+	text-align: center;
+	color: blue;
+}
+
+.showcase-p {
+	font-size: 35px;
+	font-weight: bold;
+	color: navy;
+	text-shadow: 0 2px white;
+
+}
+
+.showcase-btn {
+	margin-top: 30px;
+	padding: 10px 30px;
+	font-size: 25px;
+	border: 1px solid #fff;
+
+}
+
+.jumbotron {
+	margin: 0;
+	background-color: #f9f090;
+}
+
+#landingText {
+	background-color: #fef272;
+	padding: 80px 0;
+}
+
+.grad-awards-years  {
+	line-height: 30px;
+}
+
+.icons {
+	width: 35%;
+	border: 5px solid navy;
+	border-radius: 50%;
+}
+
+.grad-awards-years h3 {
+	padding: 20px 0;
+}
+
+.video-showcase {
+	background-image: url(../../landing-page/img/video-bg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+/* Home */
 
 
 
 .navbar {
-	background-color: #f3d224ad;
-	padding: 0 25px;
+	background-color: #fef272;
+	padding: 20px 30px;
 
 }
 
-
-
-
+.nav-item {
+	margin: 10px;
+}
 
 .nav-link {
 	width: 120px;
 	font-size: 20px;
+
 }
 
-.carousel-caption {
-	width: 60%;
+.nav-link:hover {
+	background-color: gold;
+	border: 1px solid white;
+
+}
+
+.navbar-brand {
+	width: 40%;
+	
+
+}
+
+.myNav {
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+	background: none;
+	border: 0;
+	border-radius: 0;
+}
+
+
+.logo {
+	width: 40%;
+}
+
+.photo-album {
+	float: left;
+	width: 48%;
+	/*margin-right: 5px;*/
+	margin: 2.5px;
+}
+
+.embed-responsive {
+	margin-bottom: 20px;
+	padding: 20px;
+	width: 100%;
+	height: 25%;
+	overflow: hidden;
+}
+
+#footer {
+	background-color: grey;
+}
+
+.social-media {
+	display: inline;
+	list-style-type: none;
+}
+
+.social-media > li {
+	display: inline;
+
+}
+
+.social-media > li > a {
+	display: inline;
+	text-decoration-style: none;
+	padding: 20px 30px;
+	border-radius: 50%;
+	
+}
+
+
+.album-events {
+	border-bottom: 2px solid grey;
+}
+
+.album-events > div > div > .card {
+	display: inline-block;
+	margin: 0;
+	/*width: 100%;*/
+}
+
+.videos > .card {
+	border: none;
+	text-align: justify;
+	margin: 10px;
+
+}
+
+h2 {
+	padding: 10px 0;
+}
+
+.list-group-item {
+	background-color: #f5f05147;
+}
+
+.footer {
+	margin-top: 50px;
+}
+
+.address-contact {
+	margin-top: 50px;
+	background-color: #29c5e8d6;
+	
+}
+
+#map-container {
+	margin: 20px;
+
+}
+
+.contact {
+	width: 80%;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	opacity: 2;
-}
-
-.carousel-caption > p {
-	/*color: blue;*/
-	font-size: 30px;
-}
-
-.carousel-btn {
-	padding: 15px 25px;
 	font-size: 20px;
-}
+	text-align: center;
 
-.card {
-	padding: 10px;
-	margin-top: 10px;
-}
-
-/*.post-events {
-	border-top: 2px solid grey;
-}*/
-
-/*.events {
-	margin-bottom: 1px;
-	
-}*/
-
-.sharedPost {
-	float: left;
-	width: 50%;
-	padding-right: 15px;
-}
-
-.readMore {
-	float: right;
-}
-
-.clear {
-	content: "";
-	clear: both;
-	display: block;
 }
 
 
 
 
+@media only screen and (max-width: 400px) {
 
+	body {
+		font-size: 13px;
+	}
 
+	h1 {
+		font-family: 'Baloo', cursive;
+		font-size: 38px;
+		/*margin-bottom: 25px;*/
+		letter-spacing: 1px;
+		text-shadow: 0 3px white;
+	}
 
+	.showcase-p {
+		font-size: 20px;
+		font-weight: bold;
+		color: navy;
+		text-shadow: 0 1px white;
+		}
 
+	.showcase-btn {
+		margin-top: 3px;
+		padding: 5px 10px;
+		font-size: 15px;
+		border: 1px solid #fff;
+	}
 
+	.jumbotron {
+		padding: 10px 0;
+	}
 
+	.jumbotron h2 {
+		font-size: 20px;	
+	}
 
+	#landingText {
+		padding: 25px 0;
+	}
+
+	.icons {
+		width: 25%;
+	}
+
+	.grad-awards-years {
+		line-height: 20px;
+	}
+
+	.grad-awards-years h3 {
+		margin-bottom: 0;
+		padding: 10px 0;
+		font-size: 20px;
+	}
+}
