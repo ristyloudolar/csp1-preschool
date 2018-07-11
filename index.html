@@ -25,67 +25,100 @@
 
 <body>
 
-	<!-- Header and Jumbotron -->
-	<!-- <div class="landing-logo"><img src="./landing-page/img/mindatwork.jpg"></div> -->
-	<header id="showcase">
+	<!-- Showcase -->
 
+
+	<header id="showcase">
+		<img class="img-fluid rounded-circle" src="./preschool-logo.jpg">
 		<div class="title">
-			<h1>Mind at Work</h1>
-			<p class="showcase-p">Child Development and Tutorial Center</p>
-			<a class="showcase-btn btn btn-primary" href="home.html" target="_blank">Learn More</a>
+			<h1>Mind at Work <small><em>Child Development and Tutorial Center</em></small></h1>
+
+			<p class="showcase-p"><strong>B</strong>uilding the <strong>b</strong>est <strong>f</strong>oundation and <strong>m</strong>olding <strong>b</strong>est <strong>v</strong>alues.</p>
+			<a class="showcase-btn btn btn-primary" href="home.html" target="_blank">Learn more</a>
 		</div>
 	</header>
-
-	<div class="jumbotron jumbotron-fluid text-center jumbotron-landing">
+	<!-- <div class="jumbotron jumbotron-fluid text-center jumbotron-landing">
 		<div>
 			<p class="lead">Building the best foundation and molding best values.</p>
 		</div>
-	</div>
+	</div> -->
+	<!-- End - Showcase -->
 	
-	<!-- Landing Page Text -->
-	
-	<div id="landingText">
+	<!-- Landing Text -->
+
+	<div id="landing-text">
 		<div class="container">
-			<div class="row grad-awards-years text-center">
-				<div class="col-sm-4 grad">
+			<div class="row text-center">
+				<div class="col-sm-4">
 					<img class="icons" src="./landing-page/img/graduates-icon.jpg">
-					<h3>1,000+ Graduates</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+					<h3 class="icon-title">Graduates & Tutored</h3>
+					<p class="icon-text">We have 300+ graduates and 30+ have been academically tutored ranging from preschools to grade students.</p>
 				</div>
-				<div class="col-sm-4 awards">
-					<img class="icons" src="./landing-page/img/awards-icon.jpg">
-					<h3>Awards</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+				<div class="col-sm-4">
+					<img class="icons" src="./landing-page/img/teacher-icon.jpg">
+					<h3 class="icon-title">Teachers</h3>
+					<p class="icon-text">Dedicated and have true passion for educating young children. Trained on how to keep their cool under many different kinds of situations espeacially on kids. Creative and flexible.</p>
 				</div>
-				<div class="col-sm-4 years">
+				<div class="col-sm-4">
 					<img class="icons" src="./landing-page/img/icon4.jpg">
-					<h3>Years</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+					<h3 class="icon-title">Years</h3>
+					<p class="icon-text">Mind at Work Child Development and Tutorial Center have passionately partnered with parents in molding the lives of their children since <strong>2014</strong>.</p>
+				</div>
+			</div>
+			<h6 class="landing-video-header text-center mx-auto">We are always thankful for the trust and the privilege of molding the lives of these young ones!</h6>
+			<div class="row landing-video">
+				<div class="embed-responsive embed-responsive-21by9">
+					<video class="embed-responsive-item" src="./landing-page/img/landing-video.mp4" autoplay="true' loop="true" muted="true" controls="true"></video>
 				</div>
 			</div>
 
 		</div>
 	</div>
-	<div class="container-fluid video-caption">
-		<h2 class="text-center">Caption here</h2>
+
+	<!-- End Landing Text -->
+
+	<!-- Footer -->
+
+	<div class="container-fluid landing-social-media">
+		<div class="social-media-icon text-center">
+			<a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+			<a href="#" title="Gmail"><i class="fab fa-google-plus-g"></i></a>
+			<a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+			<a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+			<a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+		</div>
 	</div>
 
-	<div class="container-fluid video-showcase">
-		<div>
-			<div class="embed-responsive embed-responsive-21by9">
-				<video class="embed-responsive-item" src="./landing-page/img/landing-video.mp4" loop="true" muted="true" controls="true"></video>
+	<div class="container-fluid footer text-center">
+
+	<div class="row">
+			<div class="col-sm-3">
+				<a href="#showcase" class="text-white">Back to top</a>
+			</div>
+			
+			<div class="col-sm-3">
+				<a class="text-white" data-toggle="modal" href="#myModal">Disclaimer</a>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4>Disclaimer</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+								<p>The site may contain links and some background images belonging to or originating from other websites. The use of these are for decorative and for interesting reads only.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<p>Copyright &copy; 2018. Mind at Work Child Development and Tutorial Center.</p>
 			</div>
 		</div>
 	</div>
+	<!-- End - Footer -->
 
 	<!-- Import Bootstrap script -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

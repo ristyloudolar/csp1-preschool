@@ -23,51 +23,48 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
+
+	
 	<div class="container inquiry">
 		<h2 class="inquiry-header text-center">Inquiry Form</h2>
 		<div class="inquiry-details">
-		<p>Please provide a few essential details, including all the fields marked *, then click the SUBMIT button. You will receive an email confirmation of your message and we will contact you as soon as possible to respond to your inquiry.</p>
+		<p class="pt-3">Please provide a few essential details, including all the fields marked *, then click the SUBMIT button. You will receive an email confirmation of your message and we will contact you as soon as possible to respond to your inquiry.</p>
 		<form>
-			<h2>Your Contact Details</h2>
+			<h2 class="label-header">Your Contact Details</h2>
 			<div class="form-group row">
-				<label for="inputName" class="col-sm-2 col-form-label">Your Name</label>
-				<div class="col-sm-10">
+				<label for="inputName" class="col-sm-3 col-form-label">Your Name</label>
+				<div class="col-sm-9">
 					<input type="email" class="form-control" id="inputName" placeholder="Name">
 				</div>
 			</div>
 			<div class="form-group row">
-				<label for="inputEmail" class="col-sm-2 col-form-label">Email Address</label>
-				<div class="col-sm-10">
+				<label for="inputEmail" class="col-sm-3 col-form-label">Email Address</label>
+				<div class="col-sm-9">
 					<input type="email" class="form-control" id="inputEmail" placeholder="Input Email">
 				</div>
 			</div>
 			<div class="form-group row">
-				<label for="inputPhone" class="col-sm-2 col-form-label">Phone Number</label>
-				<div class="col-sm-10">
+				<label for="inputPhone" class="col-sm-3 col-form-label">Phone Number</label>
+				<div class="col-sm-9">
 					<input type="password" class="form-control" id="inputPhone" placeholder="Phone Number">
 				</div>
 			</div>
 			<div class="form-group row">
-				<label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
-				<div class="col-sm-10">
+				<label for="inputAddress" class="col-sm-3 col-form-label">Address</label>
+				<div class="col-sm-9">
 					<input type="password" class="form-control" id="inputAddress" placeholder="Address">
 				</div>
 			</div>
-			<div class="form-group row">
-				<label for="inputPhone" class="col-sm-2 col-form-label">Phone Number</label>
-				<div class="col-sm-10">
-					<input type="password" class="form-control" id="inputPhone" placeholder="Phone Number">
-				</div>
-			</div>
-			<h2>Your Inquiry</h2>
+			
+			<h2 class="label-header">Your Inquiry</h2>
 			<div class="form-group-row">
 				<label for="inquiry">Please type your inquiry here</label>
 				<textarea id="inquiry" rows="6"></textarea>
-				<a type="submit" class="btn btn-primary mt-2">Submit</a>
+				<a type="submit" class="btn btn-primary mt-3 inquiry-btn">Submit</a>
 			</div>
 		</form>
 		<div>
-			<p>Disclaimer</p>
+			<p class="disclaimer-form pt-4 mb-0">Disclaimer: The information collected will remain private.</p>
 		</div>
 		</div>
 	</div>
