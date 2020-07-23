@@ -21,54 +21,62 @@
 
 	<!-- Import custom stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	
 </head>
 <body>
 
 	
 
 	<div class="inquiry">
-		<h2 class="inquiry-header text-center">Inquiry Form</h2>
+		
 		<div class="inquiry-details">
-			<p>Please provide a few essential details, including all the fields marked *, then click the SUBMIT button. You will receive an email confirmation of your message and we will contact you as soon as possible to respond to your inquiry.</p>
-			<form>
+			
+			<form method="POST" id="gform" class="gform" action="https://script.google.com/macros/s/AKfycbwbj14rfqLQNBiDybHNkoAHqUcfROvk3OWxftiVhK4R8ppoHUcE/exec">
+				<h2 class="inquiry-header text-center">Inquiry Form</h2>
+				<div style="display:none" class="thankyou_message">
+					 <!-- You can customize the thankyou message by editing the code below -->
+					 <h2 style="background-color:yellow">Thanks for contacting us! We will get back to you soon!</h2>
+				</div>
+				<p>Please provide a few essential details, including all the fields marked *, then click the SUBMIT button. We will contact you as soon as possible to respond to your inquiry.</p>
 				<h2 class="inquiry-subDetails">Your Contact Details</h2>
 				<div class="form-group row">
-					<label for="inputName" class="col-sm-3 col-form-label">Your Name</label>
+					<label for="inputName" class="col-sm-3 col-form-label">Your Name*</label>
 					<div class="col-sm-9">
-						<input type="email" class="form-control" id="inputName" placeholder="Name">
+						<input type="text" name="name" class="form-control" id="name" placeholder="Name">
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="inputEmail" class="col-sm-3 col-form-label">Email Address</label>
+					<label for="inputEmail" class="col-sm-3 col-form-label">Email Address*</label>
 					<div class="col-sm-9">
-						<input type="email" class="form-control" id="inputEmail" placeholder="Input Email">
+						<input type="email" name="email" class="form-control" id="email" placeholder="Input Email">
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="inputPhone" class="col-sm-3 col-form-label">Phone Number</label>
+					<label for="inputPhone" class="col-sm-3 col-form-label">Phone Number*</label>
 					<div class="col-sm-9">
-						<input type="password" class="form-control" id="inputPhone" placeholder="Phone Number">
+						<input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="inputAddress" class="col-sm-3 col-form-label">Address</label>
 					<div class="col-sm-9">
-						<input type="password" class="form-control" id="inputAddress" placeholder="Address">
+						<input type="text" name="address" class="form-control" id="address" placeholder="Address">
 					</div>
 				</div>
 				
 				<h2 class="inquiry-subDetails">Your Inquiry</h2>
 				<div class="form-group-row">
-					<label for="inquiry">Please type your inquiry here</label>
-					<textarea id="inquiry" rows="6"></textarea>
-					<a type="submit" class="btn btn-primary mt-3 inquiry-btn">Submit</a>
+					<label for="inquiry">Please type your inquiry here*</label>
+					<textarea id="message" rows="6" name="message"></textarea>
+					<button class="btn btn-primary mt-3 inquiry-btn">Submit</button>
 				</div>
+				
 			</form>
 		<div>
 			<p class="disclaimer-form pt-4 mb-0">Disclaimer: The information collected will remain private.</p>
 		</div>
 		</div>
 	</div>
-
+	<script data-cfasync="false" type="text/javascript" src="./assets/js/form-submission-handler.js"></script>
 </body>
 </html>
